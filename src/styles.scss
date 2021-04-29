@@ -4,17 +4,19 @@
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    border: black solid 2px;
+    border: #e1e1e1 solid 2px;
     outline: none;
     background-color: rgb(0, 0, 0,0);
     cursor: pointer;
     margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
 .chat-container{
     height: 50vh;
     width: 50vw;
     overflow-y: scroll;
-    border: 2px solid black ;
+    border: 2px solid #e1e1e1 ;
     border-radius: 10px;
     box-shadow: 4px 8px 8px gray;
     padding: 20px;
@@ -32,6 +34,8 @@
 .message-box{
     margin-top: 40px;
     display: flex;
+    justify-content: space-around;
+    width: 45vw;
 }
 .message-container{
     padding: 1%;
@@ -48,9 +52,10 @@
 #username{
     border-radius: 5px;
     outline: none;
-    border: 2px solid black;
+    border: 2px solid #e1e1e1;
     height: 5%;
     width: 40vw;
+    padding-left: 10px;
 }
 
 .userInput-container{
@@ -69,20 +74,24 @@
     width: 300px;
     overflow-wrap: normal;
 }
-#user-message{
+#userMessage{
     border-radius: 5px;
+    padding-left: 20px;
+    border: 2px solid #e1e1e1;
 }
 
 #sendButton{
-    width: 50px;
-    border-radius: 50%;
+    width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     outline: none;
     background-color: rgb(0, 0, 0,0);
-    border: none;
+    padding-right: 10px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+
 }
 #sendButton:hover{
     cursor: pointer;
