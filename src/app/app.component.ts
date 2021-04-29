@@ -19,15 +19,11 @@ export class AppComponent implements OnInit{
         this.printMessage(data);
       })
       this.socket.on('getMessage',(data)=>{    
-          console.log("Testing");
-          this.printMessage(data);
-          
+        let chatContainer = document.getElementsByClassName("chat-container");
+        console.log(chatContainer[0].scrollHeight);
+        chatContainer[0].scrollTop = chatContainer[0].scrollHeight + 1000;
+        this.printMessage(data);
       })
-      document.addEventListener("visibilitychange",() => {
-        if (!(document.visibilityState === 'visible')) {
-          
-        }
-      });
   }
 
   setUsername(usernameField){
