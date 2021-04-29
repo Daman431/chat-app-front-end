@@ -10,7 +10,7 @@ export class AppComponent implements OnInit{
   title = 'Chat Bhandar';
   username:any;
   hasUserRegistered:boolean = false;
-  socket = socketIo('http://chat-bhandar.herokuapp.com');
+  socket = socketIo('https://chat-bhandar.herokuapp.com');
 
 
   ngOnInit() {
