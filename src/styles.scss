@@ -99,7 +99,7 @@ body {
   border-radius: 9px;
   outline: none;
   border: 3px solid #263238;
-  height: 7%;
+  height: 55px;
   width: 40vw;
   font-size: x-large;
 }
@@ -133,5 +133,14 @@ body {
   }
   .username-container {
     width: auto;
+  }
+  #userMessage {
+    padding-left: 20px;
+    border-radius: 9px;
+    outline: none;
+    border: 3px solid #263238;
+    height: 55px;
+    width: 40vw;
+    font-size: small;
   }
 }
