@@ -1,15 +1,25 @@
 <div>
   <div *ngIf="hasUserRegistered" class="main-container">
-        <h1>Chat Bhandar</h1>
+        <div class="heading-container">
+            <h1 class="display-1 fw-normal">
+                Chat Bhandar
+            </h1>
+        </div>
         <div class="chat-container">
             
         </div>
         <div class="message-box">
-            <input placeholder="Type your message here..." (keyup.enter)="sendMessage(userMessage)" id="userMessage" type="text" style="width: 40vw;height: 5vh;" #userMessage>
+            <input placeholder="Type your message here..." (keyup.enter)="sendMessage(userMessage)" id="userMessage" type="text" #userMessage>
             <button id="sendButton" (click)="sendMessage(userMessage)"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </div>
     </div>
     <div *ngIf="!hasUserRegistered" class="userInput-container">
+        <div class="heading-container">
+            <h1 class="display-3 fw-normal">Welcome to</h1>
+            <h1 class="display-1 fw-normal">
+                Chat Bhandar
+            </h1>
+        </div>
         <input type="text" id="username" (keyup.enter)="setUsername(usernameField)" placeholder="Enter your Alias" #usernameField>
         <button (click)="setUsername(usernameField)" id="aliasSubmit">Submit</button>
     </div>
